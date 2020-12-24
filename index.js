@@ -9,7 +9,7 @@ const resolvers = require('./graphql/resolvers');
 const { MONGODB } = require('./config.js');
 
 const pusub = new PubSub();
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 
 const server = new ApolloServer({
     typeDefs,    // these get filled up by the resolvers, and they are used to for querying in the front end
